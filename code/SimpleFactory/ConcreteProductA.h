@@ -15,8 +15,10 @@ class ConcreteProductA : public Product
 
 public:
 	ConcreteProductA();
+    // 虚析构函数(有道笔记搜一下), 非基类，可以不写virtual吧
 	virtual ~ConcreteProductA();
-	
+
+    // virtual可以省略，但是写出，就是代码更清晰了
 	virtual void Use();
 
 };
